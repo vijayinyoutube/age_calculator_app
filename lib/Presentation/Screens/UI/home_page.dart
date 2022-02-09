@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 
 import '../../Components/spacers.dart';
-import '../Widgets/button.dart';
-import '../Widgets/text_form_field.dart';
+import '../Widgets/1text_data_widget.dart';
+import '../Widgets/3button.dart';
+import '../Widgets/2text_form_field.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key, required this.title}) : super(key: key);
@@ -26,7 +27,7 @@ class _MyHomePageState extends State<MyHomePage> {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: const [
-            Text("Value"),
+            TextData(message: "value"),
             HeightSpacer(myHeight: 20),
             InputField(),
             HeightSpacer(myHeight: 10),

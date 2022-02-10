@@ -1,8 +1,15 @@
-import 'package:age_calculator_app/Presentation/Components/spacers.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+
+import '../../Components/spacers.dart';
 
 class InputField extends StatelessWidget {
-  const InputField({Key? key}) : super(key: key);
+  const InputField(
+      {Key? key, required this.focusNode, required this.ageController})
+      : super(key: key);
+
+  final FocusNode focusNode;
+  final TextEditingController ageController;
 
   @override
   Widget build(BuildContext context) {
@@ -14,6 +21,16 @@ class InputField extends StatelessWidget {
         SizedBox(
           width: 50,
           child: TextFormField(
+            controller: ageController,
+            autofocus: true,
+            onFieldSubmitted: (value) {
+              FocusScope.of(context).requestFocus(focusNode);
+            },
+            keyboardType: TextInputType.number,
+            inputFormatters: <TextInputFormatter>[
+              FilteringTextInputFormatter.digitsOnly,
+              LengthLimitingTextInputFormatter(2),
+            ],
             textAlign: TextAlign.center,
             decoration: InputDecoration(
               enabledBorder: OutlineInputBorder(

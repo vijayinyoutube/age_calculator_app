@@ -50,7 +50,9 @@ Visit my channel 👉 : https://www.youtube.com/channel/UCBC_Z7jla1GSITcqLKAtPxQ
 
 ## Sample Results
 
-<img src="https://user-images.githubusercontent.com/58719230/154796704-e98a5e82-ae40-4a36-bbdb-c30cadc479ec.png" width="250" height="500"> <img src="https://user-images.githubusercontent.com/58719230/154796707-d45a8800-27dc-4e4c-8926-8c154f99fe38.png" width="250" height="500">
+<div align="center">
+    <img src="https://user-images.githubusercontent.com/58719230/154796704-e98a5e82-ae40-4a36-bbdb-c30cadc479ec.png" width="250" height="500"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://user-images.githubusercontent.com/58719230/154796707-d45a8800-27dc-4e4c-8926-8c154f99fe38.png" width="250" height="500">  
+</div> 
   
   
 ## License
